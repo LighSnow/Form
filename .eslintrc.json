@@ -1,0 +1,71 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "plugin:css-import-order/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier", "css-import-order", "@typescript-eslint"],
+  "rules": {
+    "no-bitwise": ["error", { "allow": ["~"] }],
+    "func-names": "off",
+    "linebreak-style": ["error", "unix"],
+    "no-plusplus": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "no-useless-escape": "off",
+    "no-alert": "off",
+    "camelcase": [
+      "warn",
+      {
+        "properties": "always"
+      }
+    ],
+    "consistent-this": ["warn", "self", "that"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent", "sibling", "index"]
+        ],
+        "newlines-between": "always-and-inside-groups"
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "allowSeparatedGroups": true,
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["all", "single", "multiple", "none"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["resources/**/*.js"],
+      "excludedFiles": "*.test.js"
+    }
+  ]
+}

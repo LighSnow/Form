@@ -1,0 +1,31 @@
+{
+  "name": "esbuild",
+  "version": "1.0.0",
+  "main": "./assest/js/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./configs/start.js",
+    "build": "node ./configs/build.js"
+  },
+  "devDependencies": {
+    "esbuild-plugin-clean": "^1.0.1",
+    "esbuild-plugin-clear": "^1.0.1",
+    "esbuild-plugin-copy": "^2.1.0",
+    "esbuild-sass-plugin": "^2.6.0",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-css-import-order": "^1.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.11",
+    "tsc": "^2.0.4"
+  }
+}

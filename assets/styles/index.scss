@@ -1,0 +1,45 @@
+@import "./reset";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+
+form {
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+
+.error {
+  font-size: .875em;
+}
+
+.is-invalid {
+  .error {
+    color: #dc3545;
+  }
+  .form-control {
+    border-color: #dc3545;
+  }
+}
+
+.is-valid {
+  .error {
+    color: #198754;
+  }
+  .form-control {
+    border-color: #198754;
+  }
+}
